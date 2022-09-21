@@ -1,0 +1,13 @@
+<p>content works!</p>
+{{msg}}
+<input type="submit" value="send" (click)="showMsg()">
+<div [style.backgroundColor]="kolor">property</div>
+<input type="text" [(ngModel)]="kolor">
+
+<div *ngFor="let t of user">
+    
+{{t.idCustomer}}
+{{t.firstName}}
+{{t.lastName}}
+<input type="submit" value="delete" (click)="deleteUser(t.idCustomer)">
+</div>
