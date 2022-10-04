@@ -35,6 +35,8 @@ detail: {{list.firstName}}
  {{t.idCustomer}}
  {{t.firstName}}
  {{t.lastName}}
+
+ <a routerLink="detail/{{t.idCustomer}}"> detail</a>
  <div *ngIf="i==j">
  detail: {{list.firstName}}
  </div>
@@ -46,4 +48,6 @@ detail: {{list.firstName}}
 <div *ngFor="let t of user;  index as i">
  <input [ngClass]="'btn btn-primary'" type="submit" value="delete" (click)="deleteUser(i)">
  <input type="submit" value="detail" (click)="detail(i)">
- </div>
+ 
+
+</div>
