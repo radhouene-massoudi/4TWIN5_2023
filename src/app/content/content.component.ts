@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 msg='bonjour';
 kolor='red';
-
-user=[ { idCustomer: 1, firstName: "Mila", lastName: " un", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
-{ idCustomer: 2, firstName: "Mila", lastName: " t", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
-{ idCustomer: 3, firstName: "Mila", lastName: " e", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
-{ idCustomer: 4, firstName: "Mila", lastName: " f", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
-{ idCustomer: 5, firstName: "Mila", lastName: "K", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
+list:any;
+j=-1;
+user=[
+   { idCustomer: 1, firstName: "med", lastName: " un", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
+{ idCustomer: 2, firstName: "ali", lastName: " t", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
+{ idCustomer: 3, firstName: "hiba", lastName: " e", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
+{ idCustomer: 4, firstName: "Mila3", lastName: " f", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
+{ idCustomer: 5, firstName: "Mila4", lastName: "K", birthDate: "1999 - 06 - 30", accountCategory: "Admin", email: "mila@kunis.com", password: "test", picture: "https://bootdey.com/img/Content/avatar/avatar3.png", profession: "Software Engineer" },
 
 ]
   constructor() { 
@@ -34,9 +36,14 @@ this.kolor='pink';
   }
   return this.kolor;
 }
-deleteUser(id:any){
-//console.log(this.user[id]);
-this.user.splice(id-1,1)
+deleteUser(user:any){
+  this.user.splice(user,1)
+
+}
+detail(i:any){
+  console.log(this.user[i]);
+  this.j=i;
+this.list=this.user[i];
 
 }
 }
