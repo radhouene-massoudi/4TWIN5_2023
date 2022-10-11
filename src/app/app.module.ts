@@ -14,6 +14,7 @@ import { ListuserComponent } from './user/listuser/listuser.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { DetailComponent } from './detail/detail.component';
+import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DetailComponent } from './detail/detail.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]

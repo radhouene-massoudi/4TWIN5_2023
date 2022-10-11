@@ -9,7 +9,7 @@ import { RemoveuserComponent } from './user/removeuser/removeuser.component';
 import { UpdateuserComponent } from './user/updateuser/updateuser.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  //{path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'detail/:id',component:DetailComponent},
   {path:'user',component:ListuserComponent, children:[
@@ -17,7 +17,7 @@ const routes: Routes = [
     {path:'update/:id',component:UpdateuserComponent},
     {path:'remove/:id', component:RemoveuserComponent},
   ]},
-  
+  {path:'product',loadChildren:()=>import('./product/product.module').then((m)=>{return m.ProductModule} )},
 
   {path:'**',component:NotfoundComponent},
   
