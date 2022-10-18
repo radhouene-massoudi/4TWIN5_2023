@@ -15,6 +15,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { DetailComponent } from './detail/detail.component';
 import { ProductModule } from './product/product.module';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ProductModule } from './product/product.module';
     NotfoundComponent,
     LoginComponent,
     DetailComponent,
+    FormComponent,
     
   ],
   imports: [

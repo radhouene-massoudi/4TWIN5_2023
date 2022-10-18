@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
+import { FormComponent } from './form/form.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AdduserComponent } from './user/adduser/adduser.component';
@@ -11,6 +12,7 @@ import { UpdateuserComponent } from './user/updateuser/updateuser.component';
 const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
+  {path:'form',component:FormComponent},
   {path:'detail/:id',component:DetailComponent},
   {path:'user',component:ListuserComponent, children:[
     {path:'add',component:AdduserComponent},

@@ -1,0 +1,24 @@
+<p>form works!</p>
+<form #f="ngForm">
+<label>id</label>
+<input type="text" name="id"  ngModel required minlength="3" #t="ngModel">
+<div *ngIf="t.invalid && t.touched">
+    <div *ngIf="t.errors?.['required']">
+msg required
+    </div>
+    <div *ngIf="t.errors?.['minlength']">
+        msg minlength
+    </div>
+</div>
+<label>age</label>
+<input type="number" name="age" ngModel #age="ngModel">
+<div *ngIf="age.value>24">
+    age>24
+</div>
+<label>description</label>
+<input type="text" name="desc" ngModel>
+<input type="submit" value="save" (click)="showf(t)" >
+<!-- <div *ngIf="f.invalid"><input type="submit" value="save" (click)="showf(f.value)" disabled></div>
+<div *ngIf="f.valid"><input type="submit" value="save" (click)="showf(f.value)" ></div> -->
+
+</form>
