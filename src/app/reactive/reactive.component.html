@@ -1,0 +1,40 @@
+<h1>form Controle!</h1>
+<label>login</label>
+<input type="text" [formControl]="login">
+
+<label>pwd</label>
+<input type="text"   [formControl]="password">
+<input type="submit" value="send" (click)="showFC()">
+<h1>form group</h1>
+    <form [formGroup]="fg">
+        <label>login</label>
+        <input type="text" formControlName="loginFG">
+        <div *ngIf="loginFG?.invalid">
+            <div *ngIf="loginFG?.errors?.['required']">required</div>
+            <div *ngIf="loginFG?.errors?.['email']">email</div>
+            <div *ngIf="loginFG?.errors?.['minlength']">minlength</div>
+        </div>
+        <label>pwd</label>
+        <input type="text"   formControlName="passwordFG">
+        <input type="submit" value="send" (click)="showFG()">
+
+    </form>
+    <h1>form builder</h1>
+    <form [formGroup]="formBuilder">
+        <label>name</label>
+        <input type="text" formControlName="name">
+        <label>pwd</label>
+        <input type="text"   formControlName="surname">
+<label>cours</label>
+<div formArrayName="cours">
+    <div *ngFor="let a of cours.controls; let i=index">
+        <label>test</label>
+<input type="text" formControlName="{{i}}" >
+<input type="submit" (click)="remove(i)" value="remove">
+    </div>
+<input type="submit" (click)="addcours()" value="add cours">
+</div>
+
+        <input type="submit" value="send" (click)="showfb()">
+
+    </form>
