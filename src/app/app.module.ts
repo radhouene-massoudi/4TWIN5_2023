@@ -17,6 +17,10 @@ import { DetailComponent } from './detail/detail.component';
 import { ProductModule } from './product/product.module';
 import { FormComponent } from './form/form.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { CComponent } from './c/c.component';
+import { C1Component } from './c1/c1.component';
+import { C2Component } from './c2/c2.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,9 @@ import { ReactiveComponent } from './reactive/reactive.component';
     DetailComponent,
     FormComponent,
     ReactiveComponent,
+    CComponent,
+    C1Component,
+    C2Component,
     
   ],
   imports: [
@@ -40,7 +47,9 @@ import { ReactiveComponent } from './reactive/reactive.component';
     AppRoutingModule,
     FormsModule,
     ProductModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
