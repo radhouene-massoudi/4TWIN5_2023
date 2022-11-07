@@ -36,15 +36,8 @@ tab=[
   'tab3'
 ]
   constructor(private http:HttpClient) { }
-  fetchNbInList(list: any, attribute:string, attributeVal: string){
-    for(let t of list){
-      return t;
-      if(t.attribute==attributeVal){
-        return t;
-      }
-     
-    }
-  }
+  
+
   showMsg(d:any){
     console.log(this.tab)
     console.log(d);

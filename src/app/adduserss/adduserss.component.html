@@ -1,0 +1,12 @@
+
+
+<form #f="ngForm">
+<label>name</label>
+<input type="text" name="name"  ngModel  >
+
+<label>surname</label>
+<input type="text" name="surname" ngModel >
+<label>@</label>
+<input type="text" name="adresse" ngModel>
+<input type="submit" value="save" (click)="adduser(f.value)" >
+</form>

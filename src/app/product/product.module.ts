@@ -14,6 +14,6 @@ import { UpdateproductComponent } from './updateproduct/updateproduct.component'
   imports: [
     CommonModule,
     ProductRoutingModule
-  ]
+  ],
 })
 export class ProductModule { }

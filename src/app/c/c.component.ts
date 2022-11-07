@@ -11,9 +11,10 @@ export class CComponent implements OnInit {
   constructor(private s:FirstserviceService) { }
 
   ngOnInit(): void {
-    console.log(this.s.fetchNbInList(this.s.list,'firstName','George'));
-   this.s.fetchStudent().subscribe(
+      this.s.fetchStudent().subscribe(
+    
     (d)=>{
+      console.log('test')
       console.log(d);
     },
     (err)=>{

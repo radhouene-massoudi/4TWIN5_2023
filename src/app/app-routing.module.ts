@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdduserssComponent } from './adduserss/adduserss.component';
+import { DeleteuserComponent } from './deleteuser/deleteuser.component';
 import { DetailComponent } from './detail/detail.component';
 import { FormComponent } from './form/form.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { UpdateuserssssComponent } from './updateuserssss/updateuserssss.component';
 import { AdduserComponent } from './user/adduser/adduser.component';
 import { ListuserComponent } from './user/listuser/listuser.component';
 import { RemoveuserComponent } from './user/removeuser/removeuser.component';
 import { UpdateuserComponent } from './user/updateuser/updateuser.component';
+import { UsersComponent } from './users/users.component';
 const routes: Routes = [
-  {path:'',redirectTo:'reactive',pathMatch:'full'},
+  {path:'',redirectTo:'listUser',pathMatch:'full'},
   {path:'login',component:LoginComponent},
+  {path:'adduser',component:AdduserssComponent},
+  {path:'delete/:id',component:DeleteuserComponent},
+  {path:'update/:id',component:UpdateuserssssComponent},
+  {path:'listUser',component:UsersComponent},
   {path:'reactive',component:ReactiveComponent},
   {path:'form',component:FormComponent},
   {path:'detail/:id',component:DetailComponent},

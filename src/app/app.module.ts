@@ -21,6 +21,10 @@ import { CComponent } from './c/c.component';
 import { C1Component } from './c1/c1.component';
 import { C2Component } from './c2/c2.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
+import { DeleteuserComponent } from './deleteuser/deleteuser.component';
+import { AdduserssComponent } from './adduserss/adduserss.component';
+import { UpdateuserssssComponent } from './updateuserssss/updateuserssss.component';
 
 @NgModule({
   declarations: [
@@ -40,15 +44,20 @@ import { HttpClientModule } from '@angular/common/http';
     CComponent,
     C1Component,
     C2Component,
+    UsersComponent,
+    DeleteuserComponent,
+    AdduserssComponent,
+    UpdateuserssssComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+   
     ProductModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

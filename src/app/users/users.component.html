@@ -1,0 +1,7 @@
+<div *ngFor="let user of users">
+{{user.id}}
+{{user.name}}
+{{user.adresse}}
+<a [routerLink]="['/delete/',user.id]">remove user</a>
+</div>
+<a [routerLink]="['/adduser']">add user</a>
