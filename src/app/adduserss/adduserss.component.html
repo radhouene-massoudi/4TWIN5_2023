@@ -2,8 +2,10 @@
 
 <form #f="ngForm">
 <label>name</label>
-<input type="text" name="name"  ngModel  >
-
+<input type="text" name="name"  ngModel required minlength="3" #name="ngModel" >
+<div *ngIf="name.invalid">
+<app-errors [validator]="name"></app-errors>
+</div>
 <label>surname</label>
 <input type="text" name="surname" ngModel >
 <label>@</label>

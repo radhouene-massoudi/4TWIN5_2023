@@ -7,12 +7,14 @@ import { FirstserviceService } from '../service/firstservice.service';
   styleUrls: ['./c2.component.css']
 })
 export class C2Component implements OnInit {
-
+isAdmin='true';
   constructor(private s:FirstserviceService) { }
 
   ngOnInit(): void {
    // this.s.showMsg();
   
   }
-  
+  show(){
+    console.log("qfdsf");
+  }
 }

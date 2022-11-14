@@ -3,5 +3,11 @@
 {{user.name}}
 {{user.adresse}}
 <a [routerLink]="['/delete/',user.id]">remove user</a>
+<input type="submit"(click)="showFormUpdate(user)" value="update">
+
 </div>
 <a [routerLink]="['/adduser']">add user</a>
+
+<div *ngIf="show">
+<app-update-user-seance10 [user]="singleUser"></app-update-user-seance10>
+</div>

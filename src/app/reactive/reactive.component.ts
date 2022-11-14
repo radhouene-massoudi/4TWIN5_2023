@@ -28,6 +28,7 @@ formBuilder=this.fb.group({
    }
 
   ngOnInit(): void {
+    
   }
   showFC(){
     console.log(this.login);

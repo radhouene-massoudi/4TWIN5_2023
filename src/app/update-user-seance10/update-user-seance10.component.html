@@ -1,0 +1,9 @@
+<form #f="ngForm">
+    <label>name</label>
+    <input type="text" name="name" ngModel [(ngModel)]="user.name">
+    <label>surname</label>
+    <input type="text" name="surname" ngModel [(ngModel)]="user.surname">
+    <label>@</label>
+    <input type="text" name="adresse" ngModel [(ngModel)]="user.adresse">
+    <input type="submit" value="save" (click)="onSubmitUpdate(f.value)">
+</form>

@@ -25,6 +25,11 @@ import { UsersComponent } from './users/users.component';
 import { DeleteuserComponent } from './deleteuser/deleteuser.component';
 import { AdduserssComponent } from './adduserss/adduserss.component';
 import { UpdateuserssssComponent } from './updateuserssss/updateuserssss.component';
+import { TVComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowProductComponent } from './show-product/show-product.component';
+import { ErrorsComponent } from './errors/errors.component';
+import { UpdateUserSeance10Component } from './update-user-seance10/update-user-seance10.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +53,11 @@ import { UpdateuserssssComponent } from './updateuserssss/updateuserssss.compone
     DeleteuserComponent,
     AdduserssComponent,
     UpdateuserssssComponent,
+    TVComponent,
+    MobileComponent,
+    ShowProductComponent,
+    ErrorsComponent,
+    UpdateUserSeance10Component,
     
   ],
   imports: [

@@ -8,6 +8,8 @@ import { UserService } from '../usersService/user.service';
 })
 export class UsersComponent implements OnInit {
 users:any;
+show=false;
+singleUser:any;
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
@@ -18,5 +20,8 @@ this.userService.fetchUsers().subscribe(
 );
 
   }
-
+  showFormUpdate(p:any){
+    this.singleUser=p;
+this.show=true;
+  }
 }
