@@ -1,0 +1,4 @@
+<p>product works!</p>
+<div *ngFor="let item of listProdcut">
+<app-showone-product [singleProduct]="item" (like)="increaseLike($event)"></app-showone-product>
+</div>

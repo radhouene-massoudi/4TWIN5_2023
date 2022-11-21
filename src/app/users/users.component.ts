@@ -24,4 +24,8 @@ this.userService.fetchUsers().subscribe(
     this.singleUser=p;
 this.show=true;
   }
+
+  afterrecvData(t:any){
+console.log(t)
+  }
 }

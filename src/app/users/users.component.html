@@ -9,5 +9,5 @@
 <a [routerLink]="['/adduser']">add user</a>
 
 <div *ngIf="show">
-<app-update-user-seance10 [user]="singleUser"></app-update-user-seance10>
+<app-update-user-seance10 [user]="singleUser" (test)="afterrecvData($event)"></app-update-user-seance10>
 </div>

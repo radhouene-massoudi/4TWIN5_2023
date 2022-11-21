@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { UserService } from '../usersService/user.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { UserService } from '../usersService/user.service';
 })
 export class UpdateUserSeance10Component implements OnInit,OnChanges {
 @Input()user:any;
+@Output() test=new EventEmitter();
   constructor( private userService:UserService) { }
 
   ngOnInit(): void {
@@ -21,5 +22,8 @@ onSubmitUpdate(f:any){
       console.log('updated');
     }
   );
+}
+sendMsgToParent(){
+  this.test.emit('bonjour')
 }
 }

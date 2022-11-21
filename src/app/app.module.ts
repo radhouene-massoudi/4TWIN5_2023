@@ -30,6 +30,8 @@ import { MobileComponent } from './mobile/mobile.component';
 import { ShowProductComponent } from './show-product/show-product.component';
 import { ErrorsComponent } from './errors/errors.component';
 import { UpdateUserSeance10Component } from './update-user-seance10/update-user-seance10.component';
+import { ShowoneProductComponent } from './seance 11/showone-product/showone-product.component';
+import { ProductComponent } from './seance 11/product/product.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { UpdateUserSeance10Component } from './update-user-seance10/update-user-
     ShowProductComponent,
     ErrorsComponent,
     UpdateUserSeance10Component,
+    ShowoneProductComponent,
+    ProductComponent,
     
   ],
   imports: [
